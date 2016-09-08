@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="bower_components/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Chettan">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="pomodoro.css">
+  </head>
+
+  <body>
+
+    <h1 class="header">
+      <span class="headerSpan">
+        P<img src='https://s10.postimg.org/k8gxqs87p/tomato_icon.jpg' border='0' alt='o'/>m<img src='https://s10.postimg.org/k8gxqs87p/tomato_icon.jpg' border='0' alt='o'/>d<img src='https://s10.postimg.org/k8gxqs87p/tomato_icon.jpg' border='0' alt='o'/>r<img src='https://s10.postimg.org/k8gxqs87p/tomato_icon.jpg' border='0' alt='o'/>
+      </span>
+      <p class="timerHead">timer</p>
+    </h1>
+
+    <div class="container-fluid" ng-app="Pomodoro" ng-controller="PomodoroCtrl">
+      <div class="row mainRow">
+
+        <div class="col-xs-12 col-sm-4 col-sm-push-2 col-md-push-3">
+          <div class="col-xs-12 lengthButtons">
+            <span class="session">Session: <button class="sessionMinus" ng-click="plusMinus('sessionMinus')">-</button>{{session}}<button class="sessionPlus" ng-click="plusMinus('sessionPlus')">+</button></span><br>
+            <span class="break">Break: <button class="lengthMinus" ng-click="plusMinus('breakMinus')">-</button>{{break}}<button class="lengthPlus" ng-click="plusMinus('breakPlus')">+</button>
+            </div>
+            <div class="col-xs-12 toggleButtons">
+              <input type="checkbox" id="checkbox" checked> <label class="study" for="checkbox">Study Mode</label><i class="material-icons studyInfo" data-toggle="popover" data-placement="top" data-content="Turning Study Mode on will play alpha wave music, which has been shown to have a positive effect on studying.">&#xE88E;</i><br>
+              <button class="btn" ng-click="play()"><i class="btn-icon material-icons">&#xE038;</i></button>
+              <button class="btn" ng-click="pause()"><i class="btn-icon material-icons">&#xE035;</i></button>
+              <button class="btn" ng-click="reset()"><i class="material-icons btn-icon">&#xE028;</i></button>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-5 col-sm-push-2">
+            <div class="clock">
+              <h1 class="time"><p class="string">{{string}}</p>{{minutesDisplay}}:{{secondsDisplay}}</h1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer>
+        <span class="footText">Designed & Coded by <a href="http://hamzicabdulah.github.io/portfolio" target="_blank">Abdulah Hamzic</a></span>
+      </footer>
+
+      <script src="bower_components/jquery.min.js"></script>
+      <script src="bower_components/bootstrap.min.js"></script>
+      <script src="popover.js"></script>
+      <script src="bower_components/angular.min.js"></script>
+      <script src="app.js"></script>
+
+    </body>
+
+</html>

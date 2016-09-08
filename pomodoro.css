@@ -1,0 +1,154 @@
+body{
+  background: #ffff99;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+.mainRow{
+  margin-top: 1.3em;
+  margin-bottom: 5em;
+}
+.clock{
+  border-radius: 50%;
+  height: 18em;
+  width: 18em;
+  display: table;
+  margin: 1.7em auto 0;
+  background-color: rgba(128, 0, 0, 0.8);
+  border: #303746 solid 0.3em;
+}
+.time{
+  text-align: center;
+  display: table-cell;
+  font-weight: bold;
+  vertical-align: middle;
+  font-size: 3em;
+  font-family: "Baloo Chettan", cursive;
+  color: #1f222e;
+}
+.string{
+  margin-bottom: 0.5em;
+}
+.header{
+  margin-top: 0em;
+  padding: 0.6em 0 0.2em;
+  background: #303746;
+  color: #cc0000;
+  text-align: center;
+}
+.headerSpan{
+  border: solid 4px #ffff99;
+  border-radius: 10%;
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 1.2em;
+  padding: 0 0.3em 0.2em;
+  background: #ffff99;
+  box-shadow: 2.5px 2px 3px #888888;
+}
+img{
+  width: 0.56em;
+  margin-right: 0.02em;
+  margin-left: 0.02em;
+}
+.timerHead{
+  font-size: 0.4em;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #303746;
+}
+.session, .break {
+  color: #303746;
+  font-size: 1.6em;
+  font-family: 'Baloo Chettan', cursive;
+}
+.sessionPlus, .sessionMinus, .lengthPlus, .lengthMinus {
+  background: Transparent;
+  color: #900000;
+  border: none;
+  outline: none!important;
+}
+.lengthButtons, .toggleButtons {
+  text-align:center;
+}
+.btn{
+  padding: 0.9em;
+  height: 1.9em;
+  background: #303746;
+  color: #ffff99;
+  border-radius: 0%;
+  font-family: 'Baloo Chettan', cursive;
+  outline: none!important;
+  position: relative;
+}
+.btn-icon {
+   position: absolute;
+   top: 0.02em;
+   right: 0.02em;
+ }
+.btn:hover {
+  color: #ffff4d!important;
+}
+.btn:focus {
+  color: #ffff99;
+}
+#checkbox {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  outline: none!important;
+}
+.study {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #303746;
+}
+.studyInfo {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.popover {
+  font-family: "Baloo Chettan", cursive;
+  font-size: 0.8em;
+  width: 12em;
+  color: #303746;
+}
+footer{
+  text-align: center!important;
+  position: absolute;
+  bottom: 0.5em;
+  left: 0;
+  right: 0;
+  color: #331a00;
+  font-weight: bold;
+  font-size: 0.9em;
+  font-family: 'Baloo Chettan';
+  color: #303746;
+}
+@media screen and (min-width:768px){
+  .headerSpan{
+    font-size: 1.3em;
+  }
+  .clock{
+    transform: scale(1.1, 1.1);
+    margin: 1em auto 0;
+  }
+  .toggleButtons {
+    margin-top: 11em;
+  }
+  .lengthButtons, .toggleButtons {
+    text-align:left;
+  }
+  .mainRow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 855px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -427.5px;
+  }
+  #checkbox {
+    margin-top: 0em;
+  }
+  footer {
+    font-size: 1em;
+  }
+}

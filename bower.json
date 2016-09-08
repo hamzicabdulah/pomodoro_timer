@@ -1,0 +1,27 @@
+{
+  "name": "pomodoro",
+  "authors": [
+    "hamzicabdulah <abdulahhamzic@gmail.com>"
+  ],
+  "description": "Pomodoro Timer built using AngularJS",
+  "main": "index.html",
+  "keywords": [
+    "pomodoro",
+    "pomodoro",
+    "clock"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "angular": "^1.5.8"
+  }
+}
